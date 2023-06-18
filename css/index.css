@@ -128,7 +128,8 @@ img-col {
     font-size: 16px;
     margin-top: -30px;
     margin: 30px auto;
-    font-family:  'Pacifico', cursive;
+    /* font-family:  'Pacifico', cursive; */
+    font-family: 'Comic Sans MS', cursive ;
 }
 
 /* services */
@@ -324,7 +325,7 @@ h2 {
         font-size: 12px;
         margin-top: -30px;
         margin: 30px auto;
-        font-family:  'Pacifico', cursive;
+        font-family: 'Comic Sans MS', cursive ;
         padding-left: 2%;
         padding-right: 2%;
 

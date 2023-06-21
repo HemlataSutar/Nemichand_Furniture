@@ -7,6 +7,362 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEMICHAND FURNITURE</title>
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* 1st page background img */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body,
+        html {
+            overflow-x: hidden;
+        }
+
+        /* navbar */
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            color: rgb(14, 14, 14);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            /* text-decoration: none; */
+        }
+
+        .nav-links li {
+            margin: 0 30px;
+            font-size: 20px;
+        }
+
+        header {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('./home.jpg');
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .header-content {
+            margin-bottom: 150px;
+            color: rgb(9, 9, 9);
+            text-align: center;
+        }
+
+        .header-content h2 {
+            font-size: 4vmin
+        }
+
+        .line {
+            width: 150px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .header-content h1 {
+            font-size: 7vmin;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .menu-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* about us */
+
+        .content-col {
+            width: 100%;
+        }
+
+        img-col {
+            width: 60%;
+        }
+
+        .about-us .img-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            padding-top: 30%;
+        }
+
+        .img-gallery img {
+            max-width: 300px;
+            padding: 1%;
+            padding-top: 2%;
+
+        }
+
+        .content-col h1 {
+            font-size: 7vmin;
+            color: #484872;
+
+        }
+
+        .content-col h2 {
+            padding-top: 3%;
+            font-size: 6vmin;
+        }
+
+        .content-col .line {
+            align-items: center;
+        }
+
+        .content-col p {
+            font-size: 16px;
+            margin-top: -30px;
+            margin: 30px auto;
+            /* font-family:  'Pacifico', cursive; */
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        /* services */
+        section {
+            margin: 80px auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 4vmin;
+            color: #49497e;
+        }
+
+        .row {
+            display: flex;
+            align-items: start;
+            padding-top: 2%;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+        .row .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2%;
+        }
+
+        .row .col .pic {
+            padding: 5%;
+            border: 5px solid green;
+        }
+
+        h4 {
+            font-size: 3vmin;
+            margin: 20px auto;
+            padding: 5%;
+
+        }
+
+        /* products */
+        h2 {
+            text-align: center;
+            font-size: 7vmin;
+            color: #484872;
+        }
+
+        .all-products {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product .line {
+            align-items: center;
+        }
+
+        .product {
+            overflow: hidden;
+            background: #ffffff;
+            color: #21201e;
+            text-align: center;
+            width: 240px;
+            height: 500px;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.2rem;
+            margin: 2rem;
+
+        }
+
+        .product .product-title {
+            font-size: 18px;
+        }
+
+        .product:hover img {
+            scale: 1.1;
+        }
+
+        .product:hover {
+            box-shadow: 5px 15px 25px #eeeeee;
+
+        }
+
+        .product img {
+            height: 200px;
+            width: 200px;
+            /* margin: 1rem; */
+            transition: all 0.3s;
+        }
+
+        .product a:link,
+        .product a:visited {
+            color: #ececec;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2c3e50;
+            padding: 1.2rem 3rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .product a:hover {
+            transform: scale(1.1);
+        }
+
+        /* gallery */
+
+
+
+
+
+
+
+        /* footer */
+        .footer {
+            width: 100%;
+            min-height: 100px;
+            padding: 20px 80px;
+            margin: 0;
+            background: #484872;
+            text-align: center;
+        }
+
+        .footer p {
+            color: whitesmoke;
+            margin: 20px auto;
+        }
+
+        /* mobile devices */
+        @media only screen and (max-width: 800px) {
+            .menu-btn {
+                display: block;
+            }
+
+            .navbar {
+                padding: 0;
+            }
+
+            .logo {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                width: 200px;
+                height: 50px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                justify-content: center;
+                background: #f7f7f9;
+                margin-top: -900px;
+                transition: all 0.5s ease;
+            }
+
+            .mobile-menu {
+                margin-top: 0px;
+                border-bottom-right-radius: 30%;
+            }
+
+            .nav-links li {
+                margin: 30px auto;
+            }
+
+            /* about */
+            .about-us .img-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+                padding-top: 0%;
+            }
+
+            .img-gallery img {
+                max-width: 50%;
+                padding: 2%;
+            }
+
+            .content-col h1 {
+                font-size: 6vmin;
+                color: #484872;
+
+            }
+
+            .content-col p {
+                font-size: 12px;
+                margin-top: -30px;
+                margin: 30px auto;
+                font-family: 'Comic Sans MS', cursive;
+                padding-left: 2%;
+                padding-right: 2%;
+
+            }
+
+            .content-col h2 {
+                padding-top: 3%;
+                font-size: 4vmin;
+            }
+
+            /* services */
+            .row {
+                flex-direction: column;
+            }
+
+            .row .col {
+                margin: 20px auto;
+            }
+
+            .col .pic {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
